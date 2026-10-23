@@ -2,7 +2,7 @@ import streamlit as st
 
 from src import ui
 
-st.set_page_config(page_title="Thread & Trend", layout="wide")
+st.set_page_config(page_title="Thread & Trend", page_icon="🛍️", layout="wide")
 
 navigation = st.navigation([
     st.Page("pages/overview.py", title="Overview", default=True),
