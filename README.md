@@ -37,10 +37,9 @@ If MySQL is not reachable, the app says so and shows a button to use the CSV fil
 
 To use MySQL, run `data/setup_mysql.sql` to create and fill the `ecommerce_analytics` database. Then copy `.env.example` to `.env` and fill in your settings. You can also put them in `.streamlit/secrets.toml` under a `[mysql]` section with the keys `host`, `port`, `user`, `password` and `database`.
 
-To run the tests and rebuild the report files:
+To rebuild the report files:
 
 ```bash
-python -m pytest
 python make_reports.py
 ```
 
@@ -53,7 +52,6 @@ python make_reports.py
 - `src/segmentation`: RFM features and K-Means.
 - `src/plots`: all Plotly charts.
 - `data`: the CSV files and the MySQL setup script.
-- `tests`: pytest tests.
 - `reports`: `metrics.json` and two CSV tables written by `make_reports.py`.
 
 ## Sales forecasting
