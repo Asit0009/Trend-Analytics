@@ -1,0 +1,4 @@
+segment,customers,avg_spend,avg_orders,avg_recency_days,total_spend,share_of_customers,share_of_revenue
+Loyal,1522,27184.58,6.92,324.07,41374926.0,0.25,0.68
+Occasional,863,6156.48,1.67,55.07,5313038.0,0.14,0.09
+Lapsed,3615,4036.65,1.25,588.97,14592500.0,0.6,0.24

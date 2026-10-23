@@ -1,0 +1,482 @@
+{
+  "data": {
+    "customers": 6000,
+    "orders": 16510,
+    "revenue": 61280464,
+    "first_order": "2023-06-01",
+    "last_order": "2026-05-31"
+  },
+  "forecasting": {
+    "All categories": {
+      "months_of_history": 36,
+      "test_window": "2025-06 to 2026-05",
+      "backtest_origins": 7,
+      "best_model": "Ridge with lags",
+      "models": [
+        {
+          "Model": "Same month last year",
+          "MAE": 397215.17,
+          "RMSE": 495015.36,
+          "MAPE %": 15.92,
+          "RMSE vs baseline %": 0.0,
+          "Beats baseline": "-"
+        },
+        {
+          "Model": "Holt-Winters",
+          "MAE": 321965.52,
+          "RMSE": 417354.43,
+          "MAPE %": 14.26,
+          "RMSE vs baseline %": -15.69,
+          "Beats baseline": "Yes"
+        },
+        {
+          "Model": "SARIMA",
+          "MAE": 424016.8,
+          "RMSE": 508663.31,
+          "MAPE %": 18.64,
+          "RMSE vs baseline %": 2.76,
+          "Beats baseline": "No"
+        },
+        {
+          "Model": "Ridge with lags",
+          "MAE": 324149.26,
+          "RMSE": 403399.8,
+          "MAPE %": 13.79,
+          "RMSE vs baseline %": -18.51,
+          "Beats baseline": "Yes"
+        }
+      ],
+      "next_6_months": [
+        {
+          "month": "2026-06",
+          "forecast": 2018239,
+          "lower": 1623893,
+          "upper": 2578967
+        },
+        {
+          "month": "2026-07",
+          "forecast": 1859664,
+          "lower": 1496303,
+          "upper": 2376335
+        },
+        {
+          "month": "2026-08",
+          "forecast": 2130022,
+          "lower": 1713836,
+          "upper": 2721808
+        },
+        {
+          "month": "2026-09",
+          "forecast": 2316529,
+          "lower": 1863900,
+          "upper": 2960132
+        },
+        {
+          "month": "2026-10",
+          "forecast": 2823081,
+          "lower": 2271477,
+          "upper": 3607419
+        },
+        {
+          "month": "2026-11",
+          "forecast": 2909712,
+          "lower": 2341181,
+          "upper": 3718120
+        }
+      ]
+    },
+    "Accessories": {
+      "months_of_history": 36,
+      "test_window": "2025-06 to 2026-05",
+      "backtest_origins": 7,
+      "best_model": "Holt-Winters",
+      "models": [
+        {
+          "Model": "Same month last year",
+          "MAE": 33674.29,
+          "RMSE": 39685.43,
+          "MAPE %": 16.36,
+          "RMSE vs baseline %": 0.0,
+          "Beats baseline": "-"
+        },
+        {
+          "Model": "Holt-Winters",
+          "MAE": 17961.78,
+          "RMSE": 22455.35,
+          "MAPE %": 9.71,
+          "RMSE vs baseline %": -43.42,
+          "Beats baseline": "Yes"
+        },
+        {
+          "Model": "SARIMA",
+          "MAE": 45078.54,
+          "RMSE": 55818.48,
+          "MAPE %": 21.4,
+          "RMSE vs baseline %": 40.65,
+          "Beats baseline": "No"
+        },
+        {
+          "Model": "Ridge with lags",
+          "MAE": 35800.06,
+          "RMSE": 42525.12,
+          "MAPE %": 17.11,
+          "RMSE vs baseline %": 7.16,
+          "Beats baseline": "No"
+        }
+      ],
+      "next_6_months": [
+        {
+          "month": "2026-06",
+          "forecast": 136831,
+          "lower": 118802,
+          "upper": 150351
+        },
+        {
+          "month": "2026-07",
+          "forecast": 131205,
+          "lower": 113917,
+          "upper": 144169
+        },
+        {
+          "month": "2026-08",
+          "forecast": 151658,
+          "lower": 131675,
+          "upper": 166643
+        },
+        {
+          "month": "2026-09",
+          "forecast": 146740,
+          "lower": 127404,
+          "upper": 161238
+        },
+        {
+          "month": "2026-10",
+          "forecast": 246811,
+          "lower": 214290,
+          "upper": 271198
+        },
+        {
+          "month": "2026-11",
+          "forecast": 269051,
+          "lower": 233599,
+          "upper": 295635
+        }
+      ]
+    },
+    "Footwear": {
+      "months_of_history": 36,
+      "test_window": "2025-06 to 2026-05",
+      "backtest_origins": 7,
+      "best_model": "Ridge with lags",
+      "models": [
+        {
+          "Model": "Same month last year",
+          "MAE": 102868.05,
+          "RMSE": 123882.6,
+          "MAPE %": 17.6,
+          "RMSE vs baseline %": 0.0,
+          "Beats baseline": "-"
+        },
+        {
+          "Model": "Holt-Winters",
+          "MAE": 125544.73,
+          "RMSE": 148138.51,
+          "MAPE %": 22.26,
+          "RMSE vs baseline %": 19.58,
+          "Beats baseline": "No"
+        },
+        {
+          "Model": "SARIMA",
+          "MAE": 112218.95,
+          "RMSE": 139713.43,
+          "MAPE %": 19.45,
+          "RMSE vs baseline %": 12.78,
+          "Beats baseline": "No"
+        },
+        {
+          "Model": "Ridge with lags",
+          "MAE": 60942.69,
+          "RMSE": 70607.46,
+          "MAPE %": 11.49,
+          "RMSE vs baseline %": -43.0,
+          "Beats baseline": "Yes"
+        }
+      ],
+      "next_6_months": [
+        {
+          "month": "2026-06",
+          "forecast": 610351,
+          "lower": 509191,
+          "upper": 698559
+        },
+        {
+          "month": "2026-07",
+          "forecast": 452526,
+          "lower": 377523,
+          "upper": 517925
+        },
+        {
+          "month": "2026-08",
+          "forecast": 655636,
+          "lower": 546970,
+          "upper": 750389
+        },
+        {
+          "month": "2026-09",
+          "forecast": 582653,
+          "lower": 486083,
+          "upper": 666859
+        },
+        {
+          "month": "2026-10",
+          "forecast": 753343,
+          "lower": 628483,
+          "upper": 862216
+        },
+        {
+          "month": "2026-11",
+          "forecast": 661291,
+          "lower": 551687,
+          "upper": 756860
+        }
+      ]
+    },
+    "Menswear": {
+      "months_of_history": 36,
+      "test_window": "2025-06 to 2026-05",
+      "backtest_origins": 7,
+      "best_model": "Holt-Winters",
+      "models": [
+        {
+          "Model": "Same month last year",
+          "MAE": 186910.26,
+          "RMSE": 233981.37,
+          "MAPE %": 18.78,
+          "RMSE vs baseline %": 0.0,
+          "Beats baseline": "-"
+        },
+        {
+          "Model": "Holt-Winters",
+          "MAE": 134098.29,
+          "RMSE": 161402.55,
+          "MAPE %": 17.49,
+          "RMSE vs baseline %": -31.02,
+          "Beats baseline": "Yes"
+        },
+        {
+          "Model": "SARIMA",
+          "MAE": 207325.33,
+          "RMSE": 247490.82,
+          "MAPE %": 24.4,
+          "RMSE vs baseline %": 5.77,
+          "Beats baseline": "No"
+        },
+        {
+          "Model": "Ridge with lags",
+          "MAE": 190777.18,
+          "RMSE": 214697.18,
+          "MAPE %": 23.17,
+          "RMSE vs baseline %": -8.24,
+          "Beats baseline": "Yes"
+        }
+      ],
+      "next_6_months": [
+        {
+          "month": "2026-06",
+          "forecast": 585062,
+          "lower": 437910,
+          "upper": 714932
+        },
+        {
+          "month": "2026-07",
+          "forecast": 526304,
+          "lower": 393931,
+          "upper": 643131
+        },
+        {
+          "month": "2026-08",
+          "forecast": 734645,
+          "lower": 549870,
+          "upper": 897718
+        },
+        {
+          "month": "2026-09",
+          "forecast": 761352,
+          "lower": 569860,
+          "upper": 930354
+        },
+        {
+          "month": "2026-10",
+          "forecast": 1003923,
+          "lower": 751421,
+          "upper": 1226771
+        },
+        {
+          "month": "2026-11",
+          "forecast": 1112568,
+          "lower": 832740,
+          "upper": 1359532
+        }
+      ]
+    },
+    "Womenswear": {
+      "months_of_history": 36,
+      "test_window": "2025-06 to 2026-05",
+      "backtest_origins": 7,
+      "best_model": "Holt-Winters",
+      "models": [
+        {
+          "Model": "Same month last year",
+          "MAE": 116212.52,
+          "RMSE": 141057.18,
+          "MAPE %": 17.7,
+          "RMSE vs baseline %": 0.0,
+          "Beats baseline": "-"
+        },
+        {
+          "Model": "Holt-Winters",
+          "MAE": 85504.93,
+          "RMSE": 111643.29,
+          "MAPE %": 13.55,
+          "RMSE vs baseline %": -20.85,
+          "Beats baseline": "Yes"
+        },
+        {
+          "Model": "SARIMA",
+          "MAE": 119994.71,
+          "RMSE": 169703.86,
+          "MAPE %": 17.65,
+          "RMSE vs baseline %": 20.31,
+          "Beats baseline": "No"
+        },
+        {
+          "Model": "Ridge with lags",
+          "MAE": 126213.9,
+          "RMSE": 152385.12,
+          "MAPE %": 18.63,
+          "RMSE vs baseline %": 8.03,
+          "Beats baseline": "No"
+        }
+      ],
+      "next_6_months": [
+        {
+          "month": "2026-06",
+          "forecast": 533511,
+          "lower": 428856,
+          "upper": 627273
+        },
+        {
+          "month": "2026-07",
+          "forecast": 466981,
+          "lower": 375377,
+          "upper": 549051
+        },
+        {
+          "month": "2026-08",
+          "forecast": 485320,
+          "lower": 390118,
+          "upper": 570613
+        },
+        {
+          "month": "2026-09",
+          "forecast": 598792,
+          "lower": 481331,
+          "upper": 704027
+        },
+        {
+          "month": "2026-10",
+          "forecast": 1037849,
+          "lower": 834262,
+          "upper": 1220246
+        },
+        {
+          "month": "2026-11",
+          "forecast": 1112434,
+          "lower": 894216,
+          "upper": 1307939
+        }
+      ]
+    }
+  },
+  "segmentation": {
+    "customers_segmented": 6000,
+    "k_scores": [
+      {
+        "k": 2,
+        "inertia": 9465.6515,
+        "silhouette": 0.4699
+      },
+      {
+        "k": 3,
+        "inertia": 6984.9203,
+        "silhouette": 0.436
+      },
+      {
+        "k": 4,
+        "inertia": 5351.6093,
+        "silhouette": 0.3947
+      },
+      {
+        "k": 5,
+        "inertia": 4391.3588,
+        "silhouette": 0.3477
+      },
+      {
+        "k": 6,
+        "inertia": 3793.7363,
+        "silhouette": 0.3291
+      },
+      {
+        "k": 7,
+        "inertia": 3274.2026,
+        "silhouette": 0.3347
+      },
+      {
+        "k": 8,
+        "inertia": 2890.2994,
+        "silhouette": 0.3413
+      }
+    ],
+    "best_k_by_silhouette": 3,
+    "elbow_k": 4,
+    "chosen_k": 3,
+    "pca_variance_kept": 0.943,
+    "stability": {
+      "seeds": 10,
+      "mean_ari": 0.9966,
+      "min_ari": 0.9935
+    },
+    "segments": [
+      {
+        "segment": "Loyal",
+        "customers": 1522,
+        "avg_spend": 27184.5769,
+        "avg_orders": 6.9212,
+        "avg_recency_days": 324.0664,
+        "total_spend": 41374926.0,
+        "share_of_customers": 0.2537,
+        "share_of_revenue": 0.6752
+      },
+      {
+        "segment": "Occasional",
+        "customers": 863,
+        "avg_spend": 6156.4751,
+        "avg_orders": 1.6744,
+        "avg_recency_days": 55.0684,
+        "total_spend": 5313038.0,
+        "share_of_customers": 0.1438,
+        "share_of_revenue": 0.0867
+      },
+      {
+        "segment": "Lapsed",
+        "customers": 3615,
+        "avg_spend": 4036.6528,
+        "avg_orders": 1.2534,
+        "avg_recency_days": 588.9668,
+        "total_spend": 14592500.0,
+        "share_of_customers": 0.6025,
+        "share_of_revenue": 0.2381
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+Series,Model,MAE,RMSE,MAPE %,RMSE vs baseline %,Beats baseline
+All categories,Same month last year,397215.17,495015.36,15.92,0.0,-
+All categories,Holt-Winters,321965.52,417354.43,14.26,-15.69,Yes
+All categories,SARIMA,424016.8,508663.31,18.64,2.76,No
+All categories,Ridge with lags,324149.26,403399.8,13.79,-18.51,Yes
+Accessories,Same month last year,33674.29,39685.43,16.36,0.0,-
+Accessories,Holt-Winters,17961.78,22455.35,9.71,-43.42,Yes
+Accessories,SARIMA,45078.54,55818.48,21.4,40.65,No
+Accessories,Ridge with lags,35800.06,42525.12,17.11,7.16,No
+Footwear,Same month last year,102868.05,123882.6,17.6,0.0,-
+Footwear,Holt-Winters,125544.73,148138.51,22.26,19.58,No
+Footwear,SARIMA,112218.95,139713.43,19.45,12.78,No
+Footwear,Ridge with lags,60942.69,70607.46,11.49,-43.0,Yes
+Menswear,Same month last year,186910.26,233981.37,18.78,0.0,-
+Menswear,Holt-Winters,134098.29,161402.55,17.49,-31.02,Yes
+Menswear,SARIMA,207325.33,247490.82,24.4,5.77,No
+Menswear,Ridge with lags,190777.18,214697.18,23.17,-8.24,Yes
+Womenswear,Same month last year,116212.52,141057.18,17.7,0.0,-
+Womenswear,Holt-Winters,85504.93,111643.29,13.55,-20.85,Yes
+Womenswear,SARIMA,119994.71,169703.86,17.65,20.31,No
+Womenswear,Ridge with lags,126213.9,152385.12,18.63,8.03,No
